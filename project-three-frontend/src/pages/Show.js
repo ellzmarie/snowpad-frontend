@@ -47,7 +47,6 @@ function Show(props) {
           placeholder="name"
           onChange={handleChange}
         />
-        
         <input
           type="text"
           value={editForm.image}
