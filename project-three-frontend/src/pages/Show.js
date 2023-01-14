@@ -33,11 +33,12 @@ function Show(props) {
     <div>
       <h1>{snowpad.name}</h1>
       <img src={snowpad.image} alt={snowpad.name} />
-      <h2>{snowpad.info}</h2>
-      <h3>{snowpad.price}</h3>
-      <button id="delete" onClick={removeSnowpads}>
+      <h3>{snowpad.info}</h3>
+      <p>price: ${snowpad.price}</p>
+      <p>qty: </p>
+      <p>Out of Stock <button id="delete" onClick={removeSnowpads}>
         DELETE
-      </button>
+      </button></p>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -46,6 +47,7 @@ function Show(props) {
           placeholder="name"
           onChange={handleChange}
         />
+        
         <input
           type="text"
           value={editForm.image}
