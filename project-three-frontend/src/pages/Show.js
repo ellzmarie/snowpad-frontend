@@ -3,10 +3,10 @@ import { useParams, useNavigate } from "react-router-dom"
 
 function Show(props) {
   const { id } = useParams();
-  const person = props.people.find((person) => person._id === id)
+  const snowpad = props.snowpads.find((snowpad) => snowpad._id === id)
   let navigate = useNavigate();
 
-  const [editForm, setEditForm] = useState(person);
+  const [editForm, setEditForm] = useState(snowpad);
 
   // handleChange function for form
   const handleChange = (event) => {
@@ -18,23 +18,24 @@ function Show(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.updatePeople(editForm);
+    props.updateSnowpads(editForm);
     // redirect people back to index
     navigate("/");
   };
 
-  const removePerson = () => {
-    props.deletePeople(person._id);
+  const removeSnowpads = () => {
+    props.deleteSnowpads(snowpad._id);
     // redirect people back to index
     navigate("/")
   };
 
   return (
-    <div className="person">
-      <h1>{person.name}</h1>
-      <h2>{person.title}</h2>
-      <img src={person.image} alt={person.name} />
-      <button id="delete" onClick={removePerson}>
+    <div>
+      <h1>{snowpad.name}</h1>
+      <img src={snowpad.image} alt={snowpad.name} />
+      <h2>{snowpad.info}</h2>
+      <h3>{snowpad.price}</h3>
+      <button id="delete" onClick={removeSnowpads}>
         DELETE
       </button>
       <form onSubmit={handleSubmit}>
@@ -54,12 +55,19 @@ function Show(props) {
         />
         <input
           type="text"
-          value={editForm.title}
-          name="title"
-          placeholder="title"
+          value={editForm.info}
+          name="info"
+          placeholder="info"
           onChange={handleChange}
         />
-        <input type="submit" value="Update Person" />
+                <input
+          type="text"
+          value={editForm.price}
+          name="price"
+          placeholder="price"
+          onChange={handleChange}
+        />
+        <input type="submit" value="Update Snowpad" />
       </form>
     </div>
   );
