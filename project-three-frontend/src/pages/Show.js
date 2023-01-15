@@ -30,7 +30,7 @@ function Show(props) {
   };
 
   return (
-    <div>
+    <div className='snowpad-show'>
       <h1>{snowpad.name}</h1>
       <img src={snowpad.image} alt={snowpad.name} />
       <h3>{snowpad.info}</h3>
@@ -61,7 +61,7 @@ function Show(props) {
           placeholder="info"
           onChange={handleChange}
         />
-                <input
+        <input
           type="text"
           value={editForm.price}
           name="price"
