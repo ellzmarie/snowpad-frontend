@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom"
 function Show(props) {
   const { id } = useParams();
   const snowpad = props.snowpads.find((snowpad) => snowpad._id === id)
+  
   let navigate = useNavigate();
 
   const [editForm, setEditForm] = useState(snowpad);
@@ -18,7 +19,7 @@ function Show(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.updateSnowpads(editForm);
+    props.updateSnowpads(editForm,snowpad._id);
     // redirect people back to index
     navigate("/");
   };
