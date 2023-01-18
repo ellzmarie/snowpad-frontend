@@ -81,11 +81,21 @@ console.log(props)
                     placeholder="price"
                     onChange={handleChange}
                 />
+<<<<<<< HEAD
                 <input type="submit" value="Create Snowpad" />
+=======
+                <input type="submit" value="Create Person" />
+>>>>>>> main
             </form>
             {props.snowpads ? loaded() : loading()}
         </section>
     )
 }
 
+<<<<<<< HEAD
 export default Index;
+=======
+export default Index;
+
+
+>>>>>>> main
