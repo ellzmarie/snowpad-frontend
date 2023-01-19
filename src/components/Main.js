@@ -6,10 +6,12 @@ import Create from "../pages/Create"
 
 function Main(props) {
   const [snowpads, setSnowpads] = useState([])
+  // save exchange price
   const [exchangeRate, setExchangeRate] = useState([])
   const URL = "http://localhost:4000/snowpad/";
   // const exchange_URL = "https://api.apilayer.com/exchangerates_data/convert?to=EUR&from=USD&amount=10";
 
+  // get current exchange rate from API
   const getCurrentExchange = async () => {
     const exchange_URL = "https://api.apilayer.com/exchangerates_data/latest?symbols=EUR&base=USD";
     const response = await fetch(exchange_URL, { method: "GET", headers: {apikey: "6DhZgIqxGWyQgfSnhmJkrBNfihNbzFE4"}})
@@ -19,6 +21,7 @@ function Main(props) {
       })
   }
   
+  // update prices on snowpad
   const updateSnowpadPrice = async () => {
     // parse for the result
     const new_snowpads = snowpads.map(snowpad => {
@@ -41,12 +44,11 @@ function Main(props) {
     setSnowpads(new_snowpads)
   }
   
+  // added "sign" property
   const getSnowpads = async () => {
     const response = await fetch(URL)
     const data = await response.json()
     getCurrentExchange()
-    // console.log("here")
-    // console.log(exchangeRate)
     console.log("data")
     data.map(snowpad => {
       snowpad.sign = "$"
@@ -91,6 +93,7 @@ function Main(props) {
 
   return (
     <main>
+      {/* convert button added */}
       <button onClick={updateSnowpadPrice}> CONVERT </button>
       <Routes>
         <Route

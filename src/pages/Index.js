@@ -19,6 +19,7 @@ function Index(props) {
 
                 <img src={snowpad.image} alt={snowpad.name} />
                 <h3>{snowpad.info}</h3>
+                {/* change sign to snowpad property */}
                 <h3>{snowpad.sign}{snowpad.price}</h3>
             </div>
 
