@@ -2,12 +2,12 @@ import { React, useState } from "react"
 import { Link } from 'react-router-dom'
 
 function Index(props) {
-    const [newForm, setNewForm] = useState({
-        name: "",
-        info: "",
-        price: "",
-        image: ""
-    })
+    // const [newForm, setNewForm] = useState({
+    //     name: "",
+    //     info: "",
+    //     price: "",
+    //     image: ""
+    // })
 
     const loaded = () => {
         return props.snowpads.map((snowpad) => (
@@ -19,7 +19,7 @@ function Index(props) {
 
                 <img src={snowpad.image} alt={snowpad.name} />
                 <h3>{snowpad.info}</h3>
-                <h3>${snowpad.price}</h3>
+                <h3>{snowpad.sign}{snowpad.price}</h3>
             </div>
 
 
