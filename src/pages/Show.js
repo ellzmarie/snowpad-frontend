@@ -33,7 +33,7 @@ function Show(props) {
   return (
     <div className='snowpad-show'>
       <h1>{snowpad.name}</h1>
-      <img src={snowpad.image} alt={snowpad.name} />
+      <img className="snowpad-image" src={snowpad.image} alt={snowpad.name} />
       <h3>{snowpad.info}</h3>
       <p>price: ${snowpad.price}</p>
       <p>Out of Stock <button id="delete" onClick={removeSnowpads}>

@@ -12,12 +12,10 @@ function Index(props) {
     const loaded = () => {
         return props.snowpads.map((snowpad) => (
             <div key={snowpad._id} className="snowpad">
-
                 <Link to={`/snowpad/${snowpad._id}`}>
                     <h1>{snowpad.name}</h1>
                 </Link>
-
-                <img src={snowpad.image} alt={snowpad.name} />
+                <img className="snowpad-image" src={snowpad.image} alt={snowpad.name} />
                 <h3>{snowpad.info}</h3>
                 {/* change sign to snowpad property */}
                 <h3>{snowpad.sign}{snowpad.price}</h3>

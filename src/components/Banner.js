@@ -1,8 +1,8 @@
 function Banner(props){
     return (
-   <banner>
-    Banner
-   </banner>
+   <div className="banner">
+    Banner 
+   </div>
     )
 }
 
