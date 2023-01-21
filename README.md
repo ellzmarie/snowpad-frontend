@@ -33,7 +33,7 @@
 ---
 
 ### ERD Diagram 
-#### ![alt text](./Screen%20Shot%202023-01-10%20at%208.34.37%20PM.png)
+#### (![](img/Screen%20Shot%202023-01-20%20at%209.32.13%20PM.png))
 
 ---
 
