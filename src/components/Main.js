@@ -94,7 +94,8 @@ function Main(props) {
   return (
     <main>
       {/* convert button added */}
-      <button onClick={updateSnowpadPrice}> CONVERT </button>
+      <button onClick={updateSnowpadPrice}> Convert </button>
+      
       <Routes>
         <Route
           exact
