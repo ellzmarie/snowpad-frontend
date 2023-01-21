@@ -28,7 +28,9 @@
 ---
 
 ### Wireframes 
-#### ![alt text](./image.png)
+#### (![](img/WF1.png))
+#### (![](img/WF2.png))
+#### (![](img/WF3.png))
 
 ---
 
