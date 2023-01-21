@@ -34,9 +34,9 @@ function Create(props) {
     }
 
     return (
-        <section >
+        <section className="create-page">
              <form onSubmit={handleSubmit}>
-                <input
+                Name: <input
                     type="text"
                     value={newForm.name}
                     name="name"
@@ -44,7 +44,7 @@ function Create(props) {
                     required
                     onChange={handleChange}
                 />
-                <input
+                Image URL:<input
                     type="text"
                     value={newForm.image}
                     name="image"
@@ -52,7 +52,7 @@ function Create(props) {
                     required
                     onChange={handleChange}
                 />
-                <input
+                Information: <input
                     type="text"
                     value={newForm.info}
                     name="info"
@@ -60,8 +60,7 @@ function Create(props) {
                     required
                     onChange={handleChange}
                 />
-
-                <input
+                Price: <input
                     type="text"
                     value={newForm.price}
                     name="price"

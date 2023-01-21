@@ -32,36 +32,40 @@ function Show(props) {
 
   return (
     <div className='snowpad-show'>
-      <h1>{snowpad.name}</h1>
-      <img className="snowpad-image" src={snowpad.image} alt={snowpad.name} />
-      <h3>{snowpad.info}</h3>
-      <p>price: ${snowpad.price}</p>
-      <p>Out of Stock <button id="delete" onClick={removeSnowpads}>
+      <div className="show-info">
+        <h1>{snowpad.name}</h1>
+      
+        <h3>{snowpad.info}</h3>
+        <p>price: ${snowpad.price}</p>
+        <p>Delete Item <button id="delete" onClick={removeSnowpads}>
         DELETE
-      </button></p>
-      <form onSubmit={handleSubmit}>
-        <input
+        </button>
+        </p>
+      </div>
+      <img className="snowpad-image-show" src={snowpad.image} alt={snowpad.name} />
+      <form className="show-form" onSubmit={handleSubmit}>
+        Name: <input
           type="text"
           value={editForm.name}
           name="name"
           placeholder="name"
           onChange={handleChange}
         />
-        <input
+        Image URL: <input
           type="text"
           value={editForm.image}
           name="image"
           placeholder="image URL"
           onChange={handleChange}
         />
-        <input
+       Information: <input
           type="text"
           value={editForm.info}
           name="info"
           placeholder="info"
           onChange={handleChange}
         />
-        <input
+        Price: <input
           type="text"
           value={editForm.price}
           name="price"

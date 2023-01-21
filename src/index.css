@@ -8,7 +8,7 @@ body {
 
 .header {
   height: 4em;
-  background-color: aquamarine;
+  background-color: #99FFCD;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
@@ -18,6 +18,10 @@ body {
 
 .app-title {
   display: flex;
+}
+
+.app-name {
+  font-size: xx-large;
 }
 
 p {
@@ -50,6 +54,21 @@ a {
   background-repeat: repeat-x;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 5em;
+}
+
+.promo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
 section {
   display: flex;
   justify-content: space-evenly;
@@ -76,7 +95,39 @@ section {
   background-color: rgb(246, 177, 209);
 }
 
-.snowpad-image {
+.create-page {
+  height: 21em;
+  display: flex;
+}
+
+.snowpad-show {
+  display: flex;
+  flex-direction: column ;
+}
+
+.show-form {
+  margin-left: 43%;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.snowpad-image-show {
+  display: flex;
+  margin-left:33%;
   max-width: 500px;
   max-height: 500px;
 }
+
+.show-info {
+  margin-left: 38%
+}
+
+
+
