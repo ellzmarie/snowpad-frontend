@@ -17,21 +17,21 @@ const Footer = () => {
           {/* Column1 */}
           <div className="column">
             <h4>Cody Clark</h4>
-            <p><b>Fave snowpad: </b>add here</p>
+            <p><b>Fave snowpad: </b>Pink Turtle</p>
             <p><a href="https://www.linkedin.com/in/codycodes/" target="_blank" class="fa fa-linkedin"></a></p>
           </div>
 
           {/* Column2 */}
           <div className="column">
             <h4>Sonam Karia</h4>
-            <p><b>Fave snowpad: </b>add here</p>
+            <p><b>Fave snowpad: </b>Avocado</p>
             <p><a href="https://www.linkedin.com/in/sonamkaria/" target="_blank" class="fa fa-linkedin"></a></p>
           </div>
 
           {/* Column3 */}
           <div className="column">
             <h4>Winston Tang</h4>
-            <p><b>Favorite snowpad: </b>add here</p>
+            <p><b>Favorite snowpad: </b>Blue Turtle</p>
             <p><a href="https://www.linkedin.com/in/winstontang5/" target="_blank" class="fa fa-linkedin"></a></p>
           </div>
 

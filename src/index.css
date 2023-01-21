@@ -90,11 +90,6 @@ section {
   margin: 10px 10px 10px 10px;
 }
 
-.footer {
-  height: 10em;
-  background-color: rgb(246, 177, 209);
-}
-
 .create-page {
   height: 21em;
   display: flex;
@@ -137,7 +132,8 @@ input {
 .column {
   float: left;
   width: 25%;
-  padding: 10px;
+  padding: 5px 5px 5px 80px;
+  background-color: rgb(246, 177, 209);
 }
 
 /* Clear floats after the columns */
