@@ -14,7 +14,7 @@ function Main(props) {
   // get current exchange rate from API
   const getCurrentExchange = async () => {
     const exchange_URL = "https://api.apilayer.com/exchangerates_data/latest?symbols=EUR&base=USD";
-    const response = await fetch(exchange_URL, { method: "GET", headers: {apikey: "6DhZgIqxGWyQgfSnhmJkrBNfihNbzFE4"}})
+    const response = await fetch(exchange_URL, { method: "GET", headers: {apikey: "zIuppiiuS24TdyIgCETg8wV6kZPVQl2b"}})
     await response.json()
       .then((data) => {
         setExchangeRate(data.rates.EUR)
