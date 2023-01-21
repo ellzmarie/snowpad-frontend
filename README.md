@@ -54,6 +54,7 @@
 ---
 
 ### Getting Started: 
+#### ![jira](./img/jiraBoard.jpeg)
 #### JIRA BOARD: https://bookmark-4.atlassian.net/jira/software/projects/PTMSA/boards/3
 
 ---
