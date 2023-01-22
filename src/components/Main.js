@@ -8,7 +8,7 @@ function Main(props) {
   const [snowpads, setSnowpads] = useState([])
   // save exchange price
   const [exchangeRate, setExchangeRate] = useState([])
-  const URL = "https://snowpad-app.herokuapp.com/snowpad";
+  const URL = "https://snowpad-app.herokuapp.com/snowpad/";
   // const exchange_URL = "https://api.apilayer.com/exchangerates_data/convert?to=EUR&from=USD&amount=10";
 
   // get current exchange rate from API

@@ -59,8 +59,6 @@
 #### ![jira](./img/jiraBoard.jpeg)
 #### JIRA BOARD: https://bookmark-4.atlassian.net/jira/software/projects/PTMSA/boards/3
 
----
-
 #### Netlify Link: https://astounding-profiterole-75ffbe.netlify.app/
 
 #### Heroku Link: https://snowpad-app.herokuapp.com/ 
