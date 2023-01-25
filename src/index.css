@@ -133,6 +133,9 @@ input {
   float: left;
   width: 25%;
   padding: 5px 5px 5px 80px;
+}
+
+.row {
   background-color: rgb(246, 177, 209);
 }
 
